@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+  background: #0f172a;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* ---------------- LEFT PANEL ---------------- */
+
+.left {
+  width: 50%;
+  height: 100%;
+  position : relative;
+  display: flex;
+  flex-direction: column;
+  background: #111827;
+  border-right: 1px solid #374151;
+}
+
+.code {
+  height: 100%;
+  overflow: auto;
+  padding: 15px;
+  padding-bottom: 90px;
+}
+
+.code textarea,
+.code pre,
+.code pre code {
+  width: 100%;
+  height: 100%;
+  background: #1e1e1e;
+  color: white;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 15px;
+  font-family: "Fira Code", monospace;
+  line-height: 1.6;
+}
+
+/* ---------------- REVIEW BUTTON ---------------- */
+
+.review-btn {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+
+  padding: 14px 30px;
+
+  background: #2563eb;
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all .25s ease;
+
+  box-shadow:
+      0 10px 25px rgba(37,99,235,.35);
+
+  z-index: 100;
+}
+
+.review-btn:hover {
+  transform: translateY(-3px);
+  background: #1d4ed8;
+}
+
+.review-btn:active {
+  transform: scale(.97);
+}
+
+.review-btn:disabled {
+  background: #475569;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+
+/* ---------------- RIGHT PANEL ---------------- */
+
+.right {
+  width: 50%;
+  height: 100%;
+  overflow-y: auto;
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 35px;
+}
+
+/* Scrollbar */
+
+.right::-webkit-scrollbar {
+  width: 8px;
+}
+
+.right::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 20px;
+}
+
+/* ---------------- MARKDOWN ---------------- */
+
+.right h1 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+.right h2 {
+  font-size: 28px;
+  margin-top: 35px;
+  margin-bottom: 18px;
+  color: #38bdf8;
+}
+
+.right h3 {
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #60a5fa;
+}
+
+.right h4 {
+  margin-top: 18px;
+}
+
+.right p {
+  margin: 14px 0;
+  font-size: 17px;
+  color: #d1d5db;
+  text-align: left;
+}
+
+.right ul {
+  margin-left: 25px;
+  margin-bottom: 18px;
+}
+
+.right li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* ---------------- CODE BLOCK ---------------- */
+
+.right pre {
+  margin: 22px 0;
+  background: #111827;
+  border-radius: 10px;
+  padding: 18px;
+  overflow-x: auto;
+  border: 1px solid #374151;
+}
+
+.right pre code {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.right code:not(pre code) {
+  background: #1e293b;
+  padding: 3px 8px;
+  border-radius: 6px;
+  color: #38bdf8;
+}
+
+/* ---------------- TABLE ---------------- */
+
+.right table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.right th,
+.right td {
+  border: 1px solid #334155;
+  padding: 10px;
+}
+
+.right th {
+  background: #1e293b;
+}
+
+/* ---------------- BLOCKQUOTE ---------------- */
+
+.right blockquote {
+  border-left: 4px solid #38bdf8;
+  padding-left: 15px;
+  margin: 18px 0;
+  color: #94a3b8;
+}
+
+/* ---------------- HORIZONTAL LINE ---------------- */
+
+.right hr {
+  border: none;
+  height: 1px;
+  background: #334155;
+  margin: 30px 0;
+}
+
+/* ---------------- LOADING ---------------- */
+
+.loading-skeleton {
+  color: #94a3b8;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: .5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: .5;
+  }
+}
+
+/* ---------------- ERROR ---------------- */
+
+.error-message {
+  color: #ef4444;
+  background: #3f1111;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* ---------------- PLACEHOLDER ---------------- */
+
+.placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #94a3b8;
+  font-size: 18px;
+  text-align: center;
+}
