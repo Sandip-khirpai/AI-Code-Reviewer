@@ -122,41 +122,21 @@ This project solves these problems by using **Generative AI** to provide instant
 
 ---
 
-# 📷 Screenshots
+## 🏠 Home Page
 
-## Home Page
-
-
-```
-images/home.png
-```
-
-```md
 ![Home](images/home.png)
-```
 
 ---
 
-## AI Review
+## 🤖 AI Review
 
-```
-images/review.png
-```
-
-```md
 ![Review](images/review.png)
-```
 
 ---
 
-## Responsive Layout
+## 🏗️ Architecture
 
-```
-images/mobile.png
-```
-
-```md
-![Responsive](images/mobile.png)
+![Architecture](images/architecture.png)
 ```
 
 ---
