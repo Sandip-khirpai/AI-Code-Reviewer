@@ -124,48 +124,68 @@ This project solves these problems by using **Generative AI** to provide instant
 
 # 📷 Screenshots
 
-## 🏠 Home Page
+## Home Page
 
+
+```
+images/home.png
+```
+
+```md
 ![Home](images/home.png)
+```
 
 ---
 
-## 🤖 AI Review
+## AI Review
 
+```
+images/review.png
+```
+
+```md
 ![Review](images/review.png)
-
----
-
-## 🏗️ Architecture
-
-![Architecture](images/architecture.png)
 ```
 
 ---
 
-# 📂 Project Structure
+## Responsive Layout
 
 ```
+images/mobile.png
+```
+
+```md
+![Responsive](images/mobile.png)
+```
+
+---
+
+# 📁 Project Structure
+
+```text
 AI-Code-Reviewer
 │
 ├── Backend
 │   ├── src
 │   │   ├── controllers
+│   │   │   └── ai.controller.js
 │   │   ├── routes
+│   │   │   └── ai.route.js
 │   │   ├── services
+│   │   │   └── ai.service.js
 │   │   └── app.js
-│   │
-│   ├── server.js
+│   ├── .env
 │   ├── package.json
-│   └── .env
+│   └── server.js
 │
 ├── Frontend
 │   ├── src
 │   │   ├── assets
 │   │   ├── App.jsx
 │   │   ├── App.css
-│   │   └── main.jsx
-│   │
+│   │   ├── main.jsx
+│   │   └── index.css
 │   ├── public
 │   ├── package.json
 │   └── vite.config.js
@@ -175,8 +195,8 @@ AI-Code-Reviewer
 │   ├── review.png
 │   └── architecture.png
 │
-├── .gitignore
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
