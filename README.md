@@ -126,8 +126,6 @@ This project solves these problems by using **Generative AI** to provide instant
 
 ## Home Page
 
-> Add your screenshot here
-
 ```
 images/home.png
 ```
